@@ -1,23 +1,16 @@
-body{
+body {
   background-color: dimgrey;
-}
-.h1{
   text-align: center;
 }
-.h2{
+.omnie {
   text-align: start;
-  font-size: 80px;
 }
-.h3{
-  font-size: 30px;
+#footer {
+  position: absolute;
+  left:10px;
+  bottom: 0px;
 }
-.h4{
-  text-align: center;
-  font-size: 40px;
-}
-.links{
-  text-align: center;
-}
+
 .info {
   position: absolute;
   top: 85%;
@@ -25,7 +18,7 @@ body{
   border-radius: 30px;
   padding: 7px;
   -webkit-box-shadow: 5px 4px 15px black;
-          box-shadow: 5px 4px 15px black;
+  box-shadow: 5px 4px 15px black;
   font-family: 'Roboto', serif;
   font-weight: 400;
   background-color: #4e4e4e;

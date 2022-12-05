@@ -1,6 +1,7 @@
 body {
   background-color: dimgrey;
   text-align: center;
+  
 }
 .omnie {
   text-align: start;
@@ -10,5 +11,13 @@ body {
   left:10px;
   bottom: 0px;
 }
+.po{
+text-align: center;
+padding-bottom: 50px;
+}
+.zdięcie {
+  width: 200px;
+}
+  
 
 

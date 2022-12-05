@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+        <title>uwmpr stronka</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    </head>
+    <body bgcolor="dimgrey">
+      <center>
+        <h1>strona uwmpr</h1>
+      </center>
+      <span style="font-size: 20px">
+        <a href="../soc.html">sociale</a></div>
+        <a href="../cob.html">strefa tech</a></div>
+        <a href="../index.html">strona główna</a></div>
+      </span>
+      <hr>
+      <div class= "po"><h4>
+        jak uzyskać dotęp root do plików z poziomu dfu na ipadzie 4<br>
+        ZALECAM ROBIENIE TEGO NA MACU NA LINUXIE PRAWDOBODOBNIE TEZ ZADZIAŁA WINDOWSA NIE TESTOWAŁEM<br>
+        <br> na samym początku będziesz musiał pobrać dwie rzeczy<br>
+        <a href="https://cyberduck.io/download/"> cyberduck</a><br>
+        <a href="https://www.appletech752.com/downloads.html"> paczka z i bec ,ibss, ramdiskiem itd.</a><br>
+          W PRZYPADKU DRUGIEGO LINKU POBIERAMY TYLKO PACZKE KTÓRA JEST ZAZNACZONA NA ZDIĘCIU!!!<br>
+          pierwszy link to cyberduck ten program umoliwi tobie połączenie się przez sftp i ssh z twoim ipadem <br>
+
+          <img class="zdięcie" alt="s1" src="./s1.jpg" > <br>
+          zainstaluj cyerducka i zorpakuj paczke  <br>
+          wpisz cd i przeciągnij folder exploits do okna termainala<br>
+          następnie wpisz "python ipwndfu -p"
+          <br>i poczekaj na informacje "device is now in pwned DFU mode"<br>
+          następnie przejdź do folderu exploits w terminalu wpisz ipwndfu -l [plik ibss z folderu exploits]<br>
+          następnie wpisz irecovery -f [plik IBEC z folderu exploits]<br>
+          potem wpisz ./irecovery2 -s (powinna pokazać się mozliwość wysłania komendy do ipada)<br>
+          wpisz tam /send [przeciągnij plik devicetree do okna termianala]<br>
+          wpisz komende  devicetree<br>
+          wpisz devicetree<br>
+          wpisz /send [przeciągnij ramdisk do terminala]<br>
+          wpisz ramsdisk<br>
+          wpisz /send [przeciągnij plik kernelcache]<br>
+          wpisz bootx (na ekranie ipada powinno pokazać się logo i pasek postępu)<br>
+          wejdź do głównego katalogu folderu i przejdź do folderu python <br>
+          wpisz ścieka/python/tcprealy.py -t 22:2222 <br>
+          otwórz cyberduck kliknij nowe połączenie i uzupełnij dane jak na zdięciu <br>
+          
+          <img class="zdięcie" src="s2.png" alt="s2">
+          hasło do sftp: alpine<br>
+          na górze kliknij idź-> wyślij komende<br>
+          wyślij komende mount_hfs /dev/disk0s1s1 /mnt1<br>
+          przejdź do foldru /mnt1<br>
+          i juz mozesz edytować pliki na dwoim ipadzie!!!<br>
+          teraz aby wyjść z trybu ponownie wyślij komende i wpisz reboot_bak<br>
+          i to tyle masz probblemy z czymś? napisz do mnie<br>
+          podziękowania dla <a href="https://appletech752.com">appletech752</a> za stworzenie skryptów<br>
+
+          
+
+
+
+
+
+
+
+
+
+</h4>
+   </div>
+
+    </body>
+</html>
